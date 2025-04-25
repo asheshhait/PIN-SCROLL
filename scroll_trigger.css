@@ -1,0 +1,252 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fuzzy+Bubbles:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&family=Yellowtail&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-family: "Playfair Display", serif;
+    font-weight: 600;
+    /* overflow-x: hidden; */
+   
+  }
+  
+  #page1 {
+    position: relative;
+    background-color: #917961;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 99;
+  }
+  #maintext1{
+    position: absolute;
+    height: 30vh;
+    width: 59vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    color: rgb(14, 13, 13);
+    top: 34%;
+    left: 37%;
+    z-index: 99;
+    opacity: 0;
+}
+#maintext1 h1{
+    font-size: 11vh;
+    text-align: center;
+    font-weight: 200;
+    line-height: 9vh;
+    opacity: 0;
+}
+#maintext1 p{
+    font-size: 1.4vh;
+    text-align: center;
+    font-weight: 200;
+    width: 18vw;
+    opacity: 0;
+}
+  #hero, #hero1, #hero2, #hero3,#hero4,#hero5 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    transform-origin: center center; 
+  }
+  #hero {
+    background-image: url("https://images.unsplash.com/photo-1745221847962-0397cc719b8e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D");
+    z-index: 4;
+  }
+  #hero1 {
+    background-image: url("https://images.unsplash.com/photo-1722247521037-49979a2971f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDN8fHxlbnwwfHx8fHw%3D");
+  }
+  #hero2 {
+    background-image: url("https://images.unsplash.com/photo-1721044166503-7f0f938761b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D");
+  }
+  #hero3 {
+    background-image: url("https://images.unsplash.com/photo-1722859179220-a57fa0cb3c89?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE4fHx8ZW58MHx8fHx8");
+  }
+  #hero4{
+    background-image: url("https://plus.unsplash.com/premium_photo-1673064926996-a2bfd46aba1d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fHw%3D");
+  }
+  #hero5{
+    background-image: url("https://images.unsplash.com/photo-1732832183700-fcdddbc8843c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEzfHx8ZW58MHx8fHx8");
+  }
+  
+  
+  #hero img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    flex-wrap: wrap;
+    object-position: center;
+  }
+  #nav{
+   
+    height: 5vh;
+    width: 100%;
+    /* background-color: wheat; */
+    margin-top: 3vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+  
+  }
+  #middle{
+    height: 100%;
+    width: 42vw;
+    /* background-color: #ca8686; */
+    margin-left: 33vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #middle h5{
+    font-size: 1.4vh;
+    text-transform: uppercase;
+  }
+
+#right{
+    height: 100%;
+    width: 8vw;
+    /* background-color: #d45959; */
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+#icon1,#icon2{
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+}
+#icon1 i,#icon2 i{
+    font-size: 2vh;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#main_text{
+    position: absolute;
+    height: 30vh;
+    width: 59vh;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    align-items: center;
+    color: white;
+    top: 34%;
+    left: 37%;
+    z-index: 99;
+}
+#main_text h1{
+    font-size: 11vh;
+    text-align: center;
+    font-weight: 200;
+    line-height: 9vh;
+}
+#main_text p{
+    font-size: 1.4vh;
+    text-align: center;
+    font-weight: 200;
+    width: 18vw;
+}
+
+  
+  #hero1,
+  #hero2,
+  #hero3 ,#hero4,#hero5{
+    height: 100vh;
+    width: 100%;
+    /* background-color: #ab8f97; */
+    position: absolute;
+  }
+  .container{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: #774545; */
+  }
+  .paragraph {
+    position: absolute;
+    bottom: -14%;
+    left: 13%;
+    transform: translateX(-50%);
+    /* background-color: #c57e7e; */
+    padding: 20px 30px;
+    z-index: 10;
+    opacity: 1;
+    max-width: 90vw;       
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .paragraph p {
+    font-size: 1.2vw;
+    text-align: start;
+    letter-spacing: 0.2vh;
+    font-weight: 600;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex-wrap: wrap;        
+    word-break: break-word;  
+    white-space: normal;     
+    padding: 10px;
+    line-height: 1.5;
+  }
+
+#black{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+  background-color: #000000;
+}
+#round
+{
+  height: 5.8vw;
+  width: 6vw;
+  position: absolute;
+  /* background-color: #b35656; */
+  border-radius: 50%;
+  top: 70%;
+  left: 48%;
+  z-index: 100;
+  color: white;
+  border:  1px solid white;
+}
+#round h5{
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 40px;
+
+}
+  
+
+  
